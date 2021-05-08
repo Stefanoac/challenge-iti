@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeItau", "ChallengeItau\ChallengeItau.csproj", "{99B19276-883F-446F-A3CC-048150E4E180}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeItau.Tests", "ChallengeItau.Tests\ChallengeItau.Tests.csproj", "{DF45049D-8B51-4292-9258-12D0DBEAE85B}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99B19276-883F-446F-A3CC-048150E4E180}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99B19276-883F-446F-A3CC-048150E4E180}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99B19276-883F-446F-A3CC-048150E4E180}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99B19276-883F-446F-A3CC-048150E4E180}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF45049D-8B51-4292-9258-12D0DBEAE85B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF45049D-8B51-4292-9258-12D0DBEAE85B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF45049D-8B51-4292-9258-12D0DBEAE85B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF45049D-8B51-4292-9258-12D0DBEAE85B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
