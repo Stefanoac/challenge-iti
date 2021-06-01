@@ -82,4 +82,17 @@ Como executar os testes:
 
 ![image](https://user-images.githubusercontent.com/1659676/120356913-3a7f9c00-c2db-11eb-92b0-8ba893bd5f30.png)
 
+## Pontos considerados
+
+- Foi implementado o Swagger para realização dos testes, sem a necessidade de utilizar o Postman
+- Não foi criado um Crosscutting para implementação de LOGS ou de IOC, pois o projeto é muito pequeno e não achei necessidade de aumentar a complexidade dele
+- Para adicionarmos novos validators precisamos apenas criar a nova classe dentro do projeto de Services/Validators e herdar a interface IPropertyValidator
+- Dentro do construtor do service recebmos por injeção os validators que irão ser aplicados na validação da senha, isso nos faz:
+    - Garantir extensibilidade porque temos a lista de validações
+    - Termos baixo acoplamento e abstração porque as classes só dependem de interfaces
+    
+![image](https://user-images.githubusercontent.com/1659676/120357633-0a84c880-c2dc-11eb-8fb8-b51a0b45b069.png)
+
+
+
 
