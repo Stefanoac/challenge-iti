@@ -1,3 +1,5 @@
+using ChallengeItau.Domain.Interfaces;
+using ChallengeItau.Services.Validators;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -22,13 +24,29 @@ namespace ChallengeItau.Services.API
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// Garante extensibilidade porque temos a lista de validações
+        /// Temos baixo acoplamento e abstração porque as classes só dependem de interfaces
+        /// </summary>
+        /// <param name="services"></param>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            AddServices(services);
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        private static void AddServices(IServiceCollection services)
+        {
+            services.AddSingleton<IAuthenticationService, AuthenticationService>(a =>
+                new AuthenticationService
+                (
+                    new List<IPropertyValidator>
+                    {
+                        new NullPropertyValidator()
+                    }
+                ));
+        }
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

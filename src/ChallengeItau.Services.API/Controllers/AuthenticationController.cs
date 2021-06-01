@@ -1,6 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using ChallengeItau.Domain.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System.Collections.Generic;
 
 namespace ChallengeItau.Services.API.Controllers
 {
@@ -8,19 +8,18 @@ namespace ChallengeItau.Services.API.Controllers
     [Route("api")]
     public class AuthenticationController : ControllerBase
     {
-        private readonly ILogger<AuthenticationController> _logger;
+        private readonly IAuthenticationService _service;
 
-        public AuthenticationController(ILogger<AuthenticationController> logger)
+        public AuthenticationController(ILogger<AuthenticationController> logger, IAuthenticationService service)
         {
-            _logger = logger;
+            this._service = service;
         }
 
         [Route("authentication/validatePassword")]
         [HttpPost]
-        public IEnumerable<bool> ValidatePassword()
+        public bool ValidatePassword(string password)
         {
-
-            return null;
+            return this._service.IsValid(password);
         }
     }
 }

@@ -4,5 +4,10 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ChallengeItau.Domain\ChallengeItau.Domain.csproj" />
+    <ProjectReference Include="..\ChallengeItau.Services\ChallengeItau.Services.csproj" />
+  </ItemGroup>
+
 
 </Project>

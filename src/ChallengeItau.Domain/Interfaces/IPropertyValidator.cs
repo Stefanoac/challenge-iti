@@ -4,8 +4,8 @@ using System.Text;
 
 namespace ChallengeItau.Domain.Interfaces
 {
-    public interface IAuthenticationServices : IDisposable
+    public interface IPropertyValidator
     {
-        bool ValidatePassword(string password);
+        bool IsValid(string input);
     }
 }

@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeItau.Tests", "ChallengeItau.Tests\ChallengeItau.Tests.csproj", "{DF45049D-8B51-4292-9258-12D0DBEAE85B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeItau.Services.API", "ChallengeItau.Services.API\ChallengeItau.Services.API.csproj", "{7C01758E-4AE6-4F45-B752-1ACB764E04C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeItau.Services.API", "ChallengeItau.Services.API\ChallengeItau.Services.API.csproj", "{7C01758E-4AE6-4F45-B752-1ACB764E04C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeItau.Services", "ChallengeItau.Services\ChallengeItau.Services.csproj", "{067754DD-A8D8-42C8-984E-6135E871CAF3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeItau.Services", "ChallengeItau.Services\ChallengeItau.Services.csproj", "{067754DD-A8D8-42C8-984E-6135E871CAF3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeItau.Domain", "ChallengeItau.Domain\ChallengeItau.Domain.csproj", "{BE8D45FF-11A7-4077-AFC3-CEE41DD0D224}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChallengeItau.Domain", "ChallengeItau.Domain\ChallengeItau.Domain.csproj", "{BE8D45FF-11A7-4077-AFC3-CEE41DD0D224}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
