@@ -42,12 +42,12 @@ Solution:
   - ChallengeItau.Domain
       - Entity Models / Interfaces
   - ChallengeItau.Service
-      - Service and Validators
+      - Service e Validators
   - ChallengeItau.Services.API
       - API Controllers
   - ChallengeItau.Tests
-      - Unit and integration tests
-      - Used Xunit
+      - Testes de integração e unidade
+      - Foi utilizado o Xunit
 
 ## Próximos passos
 
