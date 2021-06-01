@@ -64,15 +64,15 @@ Solution:
 
 ## Executando a Aplicação
 
-Primeira maneira:
+1. Primeira maneira:
 
-1. Clonar esse repositório e abrir a soluction.
-2. Setar o ChallengeItau.Services.API como projeto padrão
+1.1 Clonar esse repositório e abrir a soluction.
+1.2 Setar o ChallengeItau.Services.API como projeto padrão
   - Clique no projeto "ChallengeItau.Services.API" com o botão direito, escolha a opção "Set as StartUp Project", irá ficar como imagem abaixo
   ![image](https://user-images.githubusercontent.com/1659676/120355963-30a96900-c2da-11eb-9c22-567d0d99524c.png)
-3. Rodar a aplicação
+1.3 Rodar a aplicação
 
-Segunda maneira:
+2. Segunda maneira:
 
 1. Clonar esse repositório
 2. Entrar no diretório ChallengeItau.Services.API
@@ -95,7 +95,6 @@ Como executar os testes:
 ## Pontos considerados
 
 - Foi implementado o Swagger para realização dos testes, sem a necessidade de utilizar o Postman
-- Não foi criado um Crosscutting para implementação de LOGS ou de IOC, pois o projeto é muito pequeno e não achei necessidade de aumentar a complexidade dele
 - Cada validator tem apenas uma resposábilidade
 - Para adicionarmos novos validators precisamos apenas criar a nova classe dentro do projeto de Services/Validators e herdar a interface IPropertyValidator, lembrando sempre de aplicar novos testes de unidade caso houver novas implementações.
 - Dentro do construtor do service recebmos por injeção os validators que irão ser aplicados na validação da senha, isso nos faz:
