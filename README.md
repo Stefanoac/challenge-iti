@@ -66,11 +66,11 @@ Solution:
 
 ## Primeira maneira:
 
-1 Clonar esse repositório e abrir a soluction.
-2 Setar o ChallengeItau.Services.API como projeto padrão
+1. Clonar esse repositório e abrir a soluction.
+2. Setar o ChallengeItau.Services.API como projeto padrão
   - Clique no projeto "ChallengeItau.Services.API" com o botão direito, escolha a opção "Set as StartUp Project", irá ficar como imagem abaixo
   ![image](https://user-images.githubusercontent.com/1659676/120355963-30a96900-c2da-11eb-9c22-567d0d99524c.png)
-3 Rodar a aplicação
+3. Rodar a aplicação
 
 ## Segunda maneira:
 
