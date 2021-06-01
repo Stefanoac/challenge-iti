@@ -1,12 +1,11 @@
 using ChallengeItau.Domain.Interfaces;
 using ChallengeItau.Services;
-using ChallengeItau.Services.Validators;
 using Moq;
 using System;
 using System.Collections.Generic;
 using Xunit;
 
-namespace ChallengeItau.Tests
+namespace ChallengeItau.Tests.UnitTest
 {
     public class AuthenticationServiceTest
     {

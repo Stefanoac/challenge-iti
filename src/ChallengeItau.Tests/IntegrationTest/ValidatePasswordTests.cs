@@ -4,7 +4,7 @@ using ChallengeItau.Services.Validators;
 using System.Collections.Generic;
 using Xunit;
 
-namespace ChallengeItau.Tests
+namespace ChallengeItau.IntegrationTest.Tests
 {
     public class ValidatePasswordTests
     {
