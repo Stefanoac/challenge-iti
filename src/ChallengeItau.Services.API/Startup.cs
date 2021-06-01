@@ -45,7 +45,12 @@ namespace ChallengeItau.Services.API
                     new List<IPropertyValidator>
                     {
                         new NullPropertyValidator(),
-                        new LengthValidator()
+                        new LengthValidator(),
+                        new DigitValidator(),
+                        new LowerCaseValidator(),
+                        new UpperCaseValidator(),
+                        new RepeatedLetterValidator(),
+                        new SpecialCharactersValidator()
                     }
                 ));
         }
