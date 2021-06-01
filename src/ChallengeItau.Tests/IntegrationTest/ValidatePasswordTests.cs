@@ -40,7 +40,13 @@ namespace ChallengeItau.Tests
             (
                 new List<IPropertyValidator>
                 {
-                    new NullPropertyValidator()
+                    new NullPropertyValidator(),
+                    new LenghtValidator(),
+                    new DigitValidator(),
+                    new LowerCaseValidator(),
+                    new UpperCaseValidator(),
+                    new SpecialCharactersValidator(),
+                    new RepeatedLetterValidator()
                 }
             );
         }

@@ -2,11 +2,11 @@
 
 namespace ChallengeItau.Services.Validators
 {
-    public class NullPropertyValidator : IPropertyValidator
+    public class LenghtValidator : IPropertyValidator
     {
         public bool IsValid(string input)
         {
-            return !string.IsNullOrEmpty(input);
+            return input.Length >= 9;
         }
     }
 }

@@ -1,12 +1,13 @@
 ﻿using ChallengeItau.Domain.Interfaces;
+using System.Linq;
 
 namespace ChallengeItau.Services.Validators
 {
-    public class NullPropertyValidator : IPropertyValidator
+    public class LowerCaseValidator : IPropertyValidator
     {
         public bool IsValid(string input)
         {
-            return !string.IsNullOrEmpty(input);
+            return input.Any(char.IsLower);
         }
     }
 }
