@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
 using System.Net.Mime;
 
 namespace ChallengeItau.Services.API.Controllers
@@ -13,7 +12,7 @@ namespace ChallengeItau.Services.API.Controllers
     {
         private readonly IAuthenticationService _service;
 
-        public AuthenticationController(ILogger<AuthenticationController> logger, IAuthenticationService service)
+        public AuthenticationController(IAuthenticationService service)
         {
             this._service = service;
         }
