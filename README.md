@@ -84,6 +84,8 @@ Solution:
 
 Como executar os testes:
 
+## Primeira maneira:
+
 1. Abrir o Test Explorer localizado dentro do menu superior "View"
 
 ![image](https://user-images.githubusercontent.com/1659676/120356799-1b810a00-c2db-11eb-9913-5f7219d2a299.png)
@@ -91,6 +93,11 @@ Como executar os testes:
 2. Clicar no primeiro ícone (duas flechas) para rodar todos testes
 
 ![image](https://user-images.githubusercontent.com/1659676/120356913-3a7f9c00-c2db-11eb-92b0-8ba893bd5f30.png)
+
+## Segunda maneira:
+
+1. Entrar no diretório ChallengeItau.Tests
+2. Utilizar o dotnet test para rodar os testes
 
 ## Pontos considerados
 
