@@ -33,6 +33,8 @@ namespace ChallengeItau.Services.API
         {
             services.AddControllers();
             AddServices(services);
+
+            services.AddSwaggerGen();
         }
 
         private static void AddServices(IServiceCollection services)
@@ -56,10 +58,15 @@ namespace ChallengeItau.Services.API
             }
 
             app.UseHttpsRedirection();
-
             app.UseRouting();
-
             app.UseAuthorization();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Password API");
+                c.RoutePrefix = string.Empty;
+            });
 
             app.UseEndpoints(endpoints =>
             {

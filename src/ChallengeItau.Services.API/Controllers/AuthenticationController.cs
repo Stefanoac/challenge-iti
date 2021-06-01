@@ -5,7 +5,6 @@ using Microsoft.Extensions.Logging;
 namespace ChallengeItau.Services.API.Controllers
 {
     [ApiController]
-    [Route("api")]
     public class AuthenticationController : ControllerBase
     {
         private readonly IAuthenticationService _service;
