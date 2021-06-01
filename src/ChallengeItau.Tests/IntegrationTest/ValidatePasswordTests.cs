@@ -41,7 +41,7 @@ namespace ChallengeItau.IntegrationTest.Tests
                 new List<IPropertyValidator>
                 {
                     new NullPropertyValidator(),
-                    new LenghtValidator(),
+                    new LengthValidator(),
                     new DigitValidator(),
                     new LowerCaseValidator(),
                     new UpperCaseValidator(),

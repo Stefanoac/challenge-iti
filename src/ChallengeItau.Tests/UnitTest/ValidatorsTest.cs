@@ -25,14 +25,14 @@ namespace ChallengeItau.Tests.UnitTest
         [Fact]
         public void ValidatorTest_LenghtValidatorSuccess()
         {
-            var validator = new LenghtValidator();
+            var validator = new LengthValidator();
             Assert.True(validator.IsValid("AbTp9!fok"));
         }
 
         [Fact]
         public void ValidatorTest_LenghtValidatorError()
         {
-            var validator = new LenghtValidator();
+            var validator = new LengthValidator();
             Assert.False(validator.IsValid("AbTp9!fo"));
         }
 

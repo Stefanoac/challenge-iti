@@ -2,11 +2,13 @@
 
 namespace ChallengeItau.Services.Validators
 {
-    public class LenghtValidator : IPropertyValidator
+    public class LengthValidator : IPropertyValidator
     {
+        private const int MINIMUM_LENGTH = 9;
+
         public bool IsValid(string input)
         {
-            return input.Length >= 9;
+            return input.Length >= MINIMUM_LENGTH;
         }
     }
 }
