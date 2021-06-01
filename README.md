@@ -36,6 +36,8 @@ Embora nossas aplicações sejam escritas em Kotlin e C# (.net core), você não
 
 ## Arquitetura
 
+![image](https://user-images.githubusercontent.com/1659676/120355456-b24cc700-c2d9-11eb-820c-7a039a06ce91.png)
+
 Solution: 
   - ChallengeItau.Domain
       - Entity Models / Interfaces
