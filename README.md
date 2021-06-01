@@ -56,3 +56,6 @@ Solution:
 - Escrever mais testes unitários caso cresça o projeto
 - Implementar novos Validators caso seja necessário
 
+## API
+
+![image](https://user-images.githubusercontent.com/1659676/120355683-db6d5780-c2d9-11eb-95d0-6fcc13782c3c.png)
