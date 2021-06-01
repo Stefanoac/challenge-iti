@@ -34,6 +34,8 @@ Output: Um boolean indicando se a senha é válida.
 
 Embora nossas aplicações sejam escritas em Kotlin e C# (.net core), você não precisa escrever sua solução usando elas. Use a linguagem de programação que considera ter mais conhecimento.
 
+# RESOLUÇÃO
+
 ## Arquitetura
 
 ![image](https://user-images.githubusercontent.com/1659676/120355456-b24cc700-c2d9-11eb-820c-7a039a06ce91.png)
